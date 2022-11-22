@@ -4,9 +4,9 @@ import Todo from './Todo'
 function TodoList() {
   return (
     <div className="list-wrapper">
+      <Todo done/>
       <Todo />
-      <Todo />
-      <Todo />
+      <Todo done/>
       <Todo />
       <Todo />
       <Todo />
