@@ -13,4 +13,8 @@ function Todo(props) {
   )
 }
 
+Todo.propTypes = {
+  done: PropTypes.bool,
+}
+
 export default Todo;
