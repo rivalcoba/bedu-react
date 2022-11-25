@@ -1,6 +1,7 @@
 import '../css/todo.css'
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Checkmark from './Checkmark';
 
 function Todo(props) {
   // Creando un Hook useState
@@ -8,7 +9,10 @@ function Todo(props) {
   return (
     <div className={`list-item ${props.done ? 'done':''}`} >
       Tarea
-      <button className="delete is-pulled-right" />
+      <div className="is-pulled-right">
+        <Checkmark done={props.done} />
+        <button className="delete is-pulled-right" />
+      </div>
     </div>
   )
 }
